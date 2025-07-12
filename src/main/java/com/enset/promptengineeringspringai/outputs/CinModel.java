@@ -6,5 +6,6 @@ public record CinModel(String nom,
                        String arabicFirstName,
                        String arabicLastName,
                        String dateValidate,
-                       String numero) {
+                       String numero,
+                       String LieuNaissance) {
 }
