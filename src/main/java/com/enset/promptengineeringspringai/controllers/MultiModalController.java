@@ -32,4 +32,17 @@ public class MultiModalController {
                 .call()
                 .entity(CinModel.class);
     };
+
+    @GetMapping("/askImage")
+    public CinModel askImage(){
+        return chatClient.prompt()
+                .system("Repondre a la question de l'utilisateur a propose de l'image manuscrite fournie")
+                .user(
+                        u->
+                                u.text("")
+                                        .media(MediaType.IMAGE_PNG, image)
+                )
+                .call()
+                .entity(CinModel.class);
+    };
 }
