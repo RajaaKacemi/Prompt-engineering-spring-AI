@@ -1,0 +1,54 @@
+# === Java build ===
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# === IDEs ===
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Logs and temporary files ===
+*.log
+*.tmp
+
+# === Environment and config files ===
+.env
+.env.*
+*.env
+src/main/.env
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application-*.yml
+src/main/resources/application-*.properties
+
+# === Maven ===
+/.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# === Gradle ===
+.gradle/
+build/
+*.gradle
+gradle-app.setting
+
+# === Others ===
+node_modules/
+dist/
+out/
